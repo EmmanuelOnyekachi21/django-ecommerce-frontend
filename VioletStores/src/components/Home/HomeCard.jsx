@@ -6,7 +6,7 @@ import { BASEURL } from '../../api'
 const HomeCard = ({product}) => {
   return (
     <div className={`col-md-3 ${styles.col}`}>
-        <Link to="/detail" style={{ textDecoration: 'none' }}>
+        <Link to={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
             <div className={styles.card}>
                 <div className={styles.cardImgWrapper}>
                     <img src={`${BASEURL}${product.image}`} className={styles.cardImgTop} alt="Product Image" />
